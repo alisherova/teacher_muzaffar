@@ -3,7 +3,7 @@ import React from 'react';
 const SectionFirst = () => {
   return (
     <div>
-      sakdjsnakj
+      <h1>Hello World!</h1
     </div>
   );
 };
