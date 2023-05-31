@@ -1,2 +1,2 @@
-export {default as FirstSection} from './section1';
-export {default as SecondSection} from './section2';
+export { default as FirstSection } from "./promo";
+export { default as SecondSection } from "./section2";
