@@ -1,9 +1,9 @@
-import {Menu} from 'antd';
+import { Menu } from 'antd';
 
 const Footer = () => {
   return (
     <div>
-      <h3>Footer</h3>
+      <span className='text-red-400'>Footer test as</span>
     </div>
   );
 };
