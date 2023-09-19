@@ -1,6 +1,6 @@
 import Button from '@/components/common/button';
 import React from 'react';
-import { PromoTitle, PromoSubtitle } from './style'
+import { PromoTitle, PromoSubtitle, PromoFooter } from './style'
 
 const SectionFirst = () => {
   return (
@@ -10,9 +10,12 @@ const SectionFirst = () => {
           <PromoTitle>Start your learning
             our <span style={{ color: "#FE7244" }}>experts Trainers</span></PromoTitle>
           <PromoSubtitle>Build your skill from world-class universities and companies, you can learn online and earn certifications and degrees.</PromoSubtitle>
-          <div className='space-x-6'>
+          <div className='flex gap-5'>
             <Button text='Register' />
-            <button>Courses </button>
+            <div className='flex items-center gap-2'>
+              <img src="/Polygon.svg" alt="polygon icon" />
+              <button>Watch now</button>
+            </div>
           </div>
         </div>
         <div className='w-2/5 relative'>
@@ -24,11 +27,15 @@ const SectionFirst = () => {
             className='w-full ' />
         </div>
       </div>
-      <div className='w-10/12 m-auto  '>
-        <div>10000+ Online Course</div>
-        <div>Expert Instruction</div>
+      <PromoFooter className='w-10/12 m-auto'>
+        <div className='flex gap-2 items-center'>
+          <img className='' src="/Course.svg" alt="Congratulations" />
+          10000+ Online Course</div>
+        <div className='flex gap-2 items-center'>
+          <img className='' src="/Expert Icon.svg" alt="Congratulations" />
+          Expert Instruction</div>
         <div>Lifetime access</div>
-      </div>
+      </PromoFooter>
     </div>
   );
 };
