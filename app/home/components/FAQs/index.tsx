@@ -10,12 +10,12 @@ interface Question {
 }
 
 const QuestionsComponent: React.FC = () => {
-    const [active, setActive] = useState();
+    const [active, setActive] = useState<number | null>(null);
 
     const toggleAccordion = (index: number) => {
-        setActive((prev) => {
-            if (prev === index) {
-                return ""
+        setActive((prevState) => {
+            if (prevState === index) {
+                return null
             } else return index
         });
     };
