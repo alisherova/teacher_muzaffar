@@ -24,11 +24,10 @@ export const QuestionAlign = styled.div`
   }
 `;
 
-export const Answer = styled.div`
+export const Answer: any = styled.div<{ isActive?: boolean }>`
   margin-left: 8px;
   margin-right: 8px;
-  max-height: ${(props) =>
-    (props.isActive as any) === true ? window.scrollY : 0};
+  max-height: ${(props) => (props.isActive === true ? window.scrollY : 0)};
   overflow: hidden;
   transition: max-height 0.6s ease;
   text-align: left;
